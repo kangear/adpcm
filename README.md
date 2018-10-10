@@ -11,7 +11,7 @@ ADPCM是一种音频压缩算法，4位的压缩率，即原文件大小为16KiB
 一般地，了解一个新东西一般是在做任何编程之前先体验，有了直观的认识之后编程时就会思路会比较清晰。
 Audacity含有ADPCM压缩功能，我们体验一下。使用Audacity打开win7.wav，可以看到win7.wav是`44100`采样率、`16bit`，为了测试压缩效果，我们以相同参数导出压缩后的数据，导出步骤如下`File -> Export Audio`，格式选择`Custom FFmpeg Export`然后点击`Open custom FFmpeg format options`在`Format`选择`wav`，`Codes`选择`adpcm_ima_wav`。右侧`Bit Rate`选择`16`，`Sample Rate`选择`44100`。如下图所示：
 
-![image](https://raw.githubusercontent.com/kangear/adpcm/master/Configure_custom_FFmpeg_options.png)
+![image](https://raw.githubusercontent.com/kangear/adpcm/master/Configure_custom_FFmpeg_options.png)  
 大小对比如下：
 ```
 -rw-rw-r-- 1 tony tony  570478 10月 10 15:40 win7.adpcm_ima
